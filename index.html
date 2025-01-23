@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shield.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <title>Boycott Woke</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #e6ebef;
+      }
+
+      h1, h2, h3, p {
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        color: rgb(36, 36, 36);
+        font-size: 2em;
+        /* font-size: calc(3em + 2vw); */
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        background-color: #e6ebef;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+      h1 > svg {
+        display: inline;
+        height: 1em;
+        width: 1em;
+        vertical-align: text-top;
+        margin: 2px 5px 0 0;
+      }
+
+      .android {
+        width: 1.4em;
+        height: 1.4em;
+      }
+      .ios {
+        width: 1.6em;
+        height: 1.6em;
+      }
+      .chrome {
+        width: 1.3em;
+        height: 1.3em;
+      }
+
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 4rem;
+        }
+        h1 > svg {
+          display: inline;
+          height: 1em;
+          width: 1em;
+          vertical-align: text-top;
+          margin: 5px 15px 0 0;
+        }
+        .android {
+          width: 2.5em;
+          height: 2.5em;
+        }
+        .ios {
+          width: 2.7em;
+          height: 2.7em;
+        }
+        .chrome {
+          width: 2em;
+          height: 2em;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        h1 {
+          font-size: 7em;
+        }
+        h1 > svg {
+          margin: 5px 20px 0 0;
+        }
+        .android {
+          width: 3em;
+          height: 3em;
+        }
+        .ios {
+          width: 3.2em;
+          height: 3.2em;
+        }
+        .chrome {
+          width: 2.5em;
+          height: 2.5em;
+        }
+      }
+
+      .background-gradient {
+        width: 100%;
+        /* height: 99vh; */
+        aspect-ratio: 16 / 9;
+        background: rgba(0, 0, 0, 0.4);
+
+        background: transparent;
+        background-image: radial-gradient(ellipse, #e6ebef, #e6ebef 6%, transparent 11%, transparent 100%);
+        background-size: 450% 250%;
+        background-position: 50% 57%;
+      }
+
+      .background-gradient.mobile {
+        width: 100%;
+        /* height: 99vh; */
+        aspect-ratio: 9 / 16;
+        background: rgba(0, 0, 0, 0.4);
+
+        background: transparent;
+        background-image: radial-gradient(ellipse, #e6ebef, #e6ebef 6%, transparent 11%, transparent 100%);
+        background-size: 450% 250%;
+        background-position: 50% 54%;
+      }
+
+      .installable-options {
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+      }
+
+      .installable-options > a {
+        display: inline;
+        margin: 0 1em;
+        cursor: pointer;
+      }
+
+      .block {
+        width: 100%;
+        background-color: #ffffff;
+      }
+      .about-block {
+        margin: 0 auto;
+        display: flex;
+        padding: 3em 10%;
+        color: #242424;
+        align-items: stretch;
+        max-width: 2500px;
+      }
+
+      @media (min-width: 768px) {
+        .about-block {
+          padding: 3em 20%;
+        }
+        .about-block > .text > h2 {
+          font-size: 4.5em;
+          font-weight: normal;
+        }
+      }
+
+      .block.grey {
+        background-color: #e6ebef;
+      }
+
+      .about-block > .graphic {
+        padding: 0 10% 0 0;
+      }
+      .about-block > .graphic > img {
+        display: block;
+        flex-grow: 2;
+        width: 100%;
+        height: 100%;
+      }
+      .about-block > .text {
+        flex-grow: 2;
+      }
+      .about-block > .text > h2 {
+        font-size: 3.2em;
+        font-weight: normal;
+      }
+      .about-block > .text > p {
+        font-size: 1.3em;
+        font-weight: lighter;
+      }
+
+      .about-block.download > .text > h2 {
+        text-align: center;
+        margin: 0 0 .5em 0;
+      }
+
+      .about-block.download {
+        padding-top: 6em;
+        padding-bottom: 6em;
+      }
+
+      .footer-block {
+        width: 100%;
+        background-color: #242424;
+      }
+      .footer-block > p {
+        width: fit-content;
+        margin: 0 auto;
+        color: #e6ebef;
+        padding: 1em;
+      }
+      .footer-block > p > a {
+        color: #e6ebef;
+        text-decoration: none;
+      }
+      .footer-block > p > svg {
+        vertical-align: text-top;
+      }
+
+      .android-download {
+        width: 3em;
+        height: 3em;
+      }
+      .ios-download {
+        width: 3.2em;
+        height: 3.2em;
+      }
+      .chrome-download {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    </style>
+    <script>
+      function resetSVG() {
+        const svgContainer = document.getElementById("hero-diagram-desktop").parentNode;
+        const svg = document.getElementById("hero-diagram-desktop");
+        svgContainer.innerHTML = svg.outerHTML;
+
+        const svgContainer2 = document.getElementById("hero-diagram-mobile").parentNode;
+        const svg2 = document.getElementById("hero-diagram-mobile");
+        svgContainer2.innerHTML = svg2.outerHTML;
+      }
+
+      function isMobileAspectRatio() {
+        return window.innerHeight > window.innerWidth;
+      }
+
+      setInterval(resetSVG, 28000);
+    </script>
+  </head>
+  <body >
+    <div id="app"></div>
+    <div class="desktop-banner" style="display: grid;" id="desktop-banner">
+      <div style="grid-area: 1 / 1; display: grid; justify-items: center; align-items: center;" class="background-gradient">
+        <div style="transform: translate(0, -70%)">
+          <h1><svg fill="#242424" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="m8 13.11c2.34-1.41 3.6-2.48 3.6-4.11v-5.2c-.93-.21-2.17-.4-3.6-.4zm0-12.11c-3.43 0-6 1-6 1s0 6.38 0 7c0 4.29 4.84 5.92 6 7 1.16-1.06 6-2.76 6-7 0-.62 0-7 0-7s-2.47-1-6-1zm4.6 8c0 2.31-1.93 3.67-4.08 4.97-.18.11-.36.21-.52.31-.18-.11-.36-.22-.57-.35-1.7-1.02-4.03-2.42-4.03-4.93v-5.98c.96-.26 2.62-.62 4.6-.62 2.01 0 3.65.35 4.6.62z"/>
+            </svg>Boycott Woke</h1>
+            <div class="installable-options">
+              <a href="https://app.boycottwoke.info"><img src="android.svg" class="android"/></a>
+              <a href="https://app.boycottwoke.info"><img src="ios.svg" class="ios"/></a>
+              <a href="https://app.boycottwoke.info"><img src="chrome.svg" class="chrome"/></a>
+            </div>
+          </div>
+      </div>
+
+
+      <div style="z-index: -1; width: 100%;grid-area: 1 / 1;margin-top:-9%">
+        <object id="hero-diagram-desktop" width="100%" height="100%" data="desktop-diagram.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
+
+    <div class="mobile-banner" style="display: grid;" id="mobile-banner">
+      <div style="grid-area: 1 / 1; display: grid; justify-items: center; align-items: center;" class="background-gradient mobile">
+        <div style="transform: translate(0, -50%)">
+          <h1><svg fill="#242424" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="m8 13.11c2.34-1.41 3.6-2.48 3.6-4.11v-5.2c-.93-.21-2.17-.4-3.6-.4zm0-12.11c-3.43 0-6 1-6 1s0 6.38 0 7c0 4.29 4.84 5.92 6 7 1.16-1.06 6-2.76 6-7 0-.62 0-7 0-7s-2.47-1-6-1zm4.6 8c0 2.31-1.93 3.67-4.08 4.97-.18.11-.36.21-.52.31-.18-.11-.36-.22-.57-.35-1.7-1.02-4.03-2.42-4.03-4.93v-5.98c.96-.26 2.62-.62 4.6-.62 2.01 0 3.65.35 4.6.62z"/>
+            </svg>Boycott Woke</h1>
+            <div class="installable-options">
+              <a href="https://app.boycottwoke.info"><img src="android.svg" class="android"/></a>
+              <a href="https://app.boycottwoke.info"><img src="ios.svg" class="ios"/></a>
+              <a href="https://app.boycottwoke.info"><img src="chrome.svg" class="chrome"/></a>
+            </div>
+          </div>
+      </div>
+
+
+      <div style="z-index: -1; width: 100%;grid-area: 1 / 1;margin-top:-17%">
+        <object id="hero-diagram-mobile" width="100%" height="100%" data="mobile-diagram.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="about-block">
+        <div class="text">
+          <h2>About</h2>
+          <p>
+            Boycott Woke is a database tracking major companies and individuals involved in "woke" initiatives. Alongside this resource, we coordinate targeted boycott campaigns against selected companies during specific time periods.
+            <br>
+            <br>
+            Our focus is on companies engaging in the most extreme initiatives. When a company is selected, we will formally request they dismantle the relevant programs. If they refuse, we will proceed with the boycott.
+            <br>
+            <br>
+            We recognize that avoiding certain stores indefinitely may not be practical. To address this, our campaigns are time-limited, enabling participants to plan alternatives while ensuring their efforts have maximum impact.
+            <br>
+            <br>
+            No sign-up is required. Boycott Woke is a platform that organizes information and delivers direct notifications about upcoming actions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block grey">
+      <div class="about-block">
+        <div class="text">
+          <h2>Why?</h2>
+          <p>
+            The West has become unrecognizable. What used to be our home has devolved into an economic zone for Asia and the Middle East.
+            <br>
+            <br>
+            All cultural guardrails have been removed. Leaving our youth to wander into the arms of nihilism, pessimism and depression.
+            <br>
+            <br>
+            This imported division has torn apart our societies. Investment in our young and poor has been halted for the enrichment of the established and "oppressed".
+            <br>
+            <br>
+            False claims by social constructionists have dismantled the meaning of being a man and a woman. Encouraging arrangements perverse to our human nature.
+            <br>
+            <br>
+            With freedoms being stripped away every day, it seems time is limited for taking action against this decline.
+            <br>
+            <br>
+            Boycott Woke hopes to address the political inaction on tackling our most pressing cultural issues.
+            <br>
+            <br>
+            By coordinating efforts we believe we can put up an effective fight to regain our homes and future.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="about-block download">
+        <!-- <div class="graphic">
+          <img src="social-social-network.svg" />
+        </div> -->
+        <div class="text">
+          <h2>Download</h2>
+          <div class="installable-options">
+            <a href="https://app.boycottwoke.info"><img src="android.svg" class="android-download"/></a>
+            <a href="https://app.boycottwoke.info"><img src="ios.svg" class="ios-download"/></a>
+            <a href="https://app.boycottwoke.info"><img src="chrome.svg" class="chrome-download"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-block">
+      <p>
+        <svg width="16" height="16" fill="#e6ebef" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+         </svg>
+         <a href="https://x.com/i_am_tristin" target="_blank">Tristin @i_am_tristin</a>
+      </p>
+    </div>
+
+    <script>
+      (function setSvgDiagram() {
+        document.getElementById("desktop-banner").style.display = isMobileAspectRatio() ? 'none' : 'grid';
+        document.getElementById("mobile-banner").style.display = isMobileAspectRatio() ? 'grid' : 'none';
+      })();
+    </script>
+  </body>
+</html>

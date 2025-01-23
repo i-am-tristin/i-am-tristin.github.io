@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="hero-diagram-mobile" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+
+    <svg x="150" y="170" width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Define the rainbow gradient -->
+      <defs>
+        <linearGradient id="animatedRainbowStroke2" x1="0" y1="0" x2="0" y2="1">
+          <!-- Red -->
+          <stop offset="0%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF0000; #FF0000; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="14.28%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF0000; #FF0000; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Orange -->
+          <stop offset="14.29%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF7F00; #FF7F00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="28.57%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF7F00; #FF7F00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Yellow -->
+          <stop offset="28.58%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FFFF00; #FFFF00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="42.85%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FFFF00; #FFFF00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Green -->
+          <stop offset="42.86%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #00FF00; #00FF00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="57.14%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #00FF00; #00FF00; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Blue -->
+          <stop offset="57.15%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #0000FF; #0000FF; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="71.42%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #0000FF; #0000FF; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Indigo -->
+          <stop offset="71.43%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #4B0082; #4B0082; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="85.71%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #4B0082; #4B0082; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Violet -->
+          <stop offset="85.72%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #8B00FF; #8B00FF; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #8B00FF; #8B00FF; black; black" 
+                    keyTimes="0; 0.6083; 0.625; 0.90; 0.92; 1" 
+                    dur="30s" 
+                    repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+      </defs>        
+    
+      <!-- Path with rainbow stroke -->
+      <path
+        d="M15 14V17.6C15 18.4401 15 18.8601 14.8365 19.181C14.6927 19.4632 14.4632 19.6927 14.181 19.8365C13.8601 20 13.4401 20 12.6 20H7.40001C6.55994 20 6.1399 20 5.81903 19.8365C5.53679 19.6927 5.30731 19.4632 5.1635 19.181C5.00001 18.8601 5.00001 18.4401 5.00001 17.6V10M19 10V20M5.00001 16H15M5.55778 4.88446L3.5789 8.84223C3.38722 9.22559 3.29138 9.41727 3.3144 9.57308C3.3345 9.70914 3.40976 9.8309 3.52246 9.90973C3.65153 10 3.86583 10 4.29444 10H19.7056C20.1342 10 20.3485 10 20.4776 9.90973C20.5903 9.8309 20.6655 9.70914 20.6856 9.57308C20.7086 9.41727 20.6128 9.22559 20.4211 8.84223L18.4422 4.88446C18.2817 4.5634 18.2014 4.40287 18.0817 4.28558C17.9758 4.18187 17.8482 4.10299 17.7081 4.05465C17.5496 4 17.3701 4 17.0112 4H6.98887C6.62991 4 6.45043 4 6.29198 4.05465C6.15185 4.10299 6.02422 4.18187 5.91833 4.28558C5.79858 4.40287 5.71832 4.5634 5.55778 4.88446Z"
+        stroke="url(#animatedRainbowStroke2)"
+        stroke-width=".75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+
+    <svg x="455" y="170" width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Define the rainbow gradient -->
+      <defs>
+        <linearGradient id="animatedRainbowStroke" x1="0" y1="0" x2="0" y2="1">
+          <!-- Red -->
+          <stop offset="0%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF0000; #FF0000; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="14.28%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF0000; #FF0000; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Orange -->
+          <stop offset="14.29%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF7F00; #FF7F00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="28.57%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FF7F00; #FF7F00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Yellow -->
+          <stop offset="28.58%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FFFF00; #FFFF00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="42.85%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #FFFF00; #FFFF00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Green -->
+          <stop offset="42.86%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #00FF00; #00FF00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="57.14%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #00FF00; #00FF00; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Blue -->
+          <stop offset="57.15%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #0000FF; #0000FF; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="71.42%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #0000FF; #0000FF; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Indigo -->
+          <stop offset="71.43%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #4B0082; #4B0082; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="85.71%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #4B0082; #4B0082; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+      
+          <!-- Violet -->
+          <stop offset="85.72%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #8B00FF; #8B00FF; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="black">
+            <animate attributeName="stop-color" 
+                    values="black; black; #8B00FF; #8B00FF; black; black" 
+                    keyTimes="0; 0.16; 0.18; 0.53; 0.55; 1" 
+                    dur="25s" 
+                    repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+      </defs>        
+    
+      <!-- Path with rainbow stroke -->
+      <path
+        d="M15 14V17.6C15 18.4401 15 18.8601 14.8365 19.181C14.6927 19.4632 14.4632 19.6927 14.181 19.8365C13.8601 20 13.4401 20 12.6 20H7.40001C6.55994 20 6.1399 20 5.81903 19.8365C5.53679 19.6927 5.30731 19.4632 5.1635 19.181C5.00001 18.8601 5.00001 18.4401 5.00001 17.6V10M19 10V20M5.00001 16H15M5.55778 4.88446L3.5789 8.84223C3.38722 9.22559 3.29138 9.41727 3.3144 9.57308C3.3345 9.70914 3.40976 9.8309 3.52246 9.90973C3.65153 10 3.86583 10 4.29444 10H19.7056C20.1342 10 20.3485 10 20.4776 9.90973C20.5903 9.8309 20.6655 9.70914 20.6856 9.57308C20.7086 9.41727 20.6128 9.22559 20.4211 8.84223L18.4422 4.88446C18.2817 4.5634 18.2014 4.40287 18.0817 4.28558C17.9758 4.18187 17.8482 4.10299 17.7081 4.05465C17.5496 4 17.3701 4 17.0112 4H6.98887C6.62991 4 6.45043 4 6.29198 4.05465C6.15185 4.10299 6.02422 4.18187 5.91833 4.28558C5.79858 4.40287 5.71832 4.5634 5.55778 4.88446Z"
+        stroke="url(#animatedRainbowStroke)"
+        stroke-width=".75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    
+
+    <path d="M 350 670 Q 100 400, 200 270" stroke="black" stroke-width="2" fill="none" id="shopPath1"/>
+    <path d="M 350 670 Q 605 400, 505 270" stroke="black" stroke-width="2" fill="none" id="shopPath3"/>
+
+    <path d="M 150 1120 Q 100 800, 350 670" stroke="black" stroke-width="2" fill="none" id="personPath1"/>
+    <path d="M 350 1120 Q 400 800, 350 670" stroke="black" stroke-width="2" fill="none" id="personPath2"/>
+    <path d="M 550 1120 Q 620 800, 350 670" stroke="black" stroke-width="2" fill="none" id="personPath4"/>
+
+    <path d="M 350 670 Q 100 800, 150 1120" stroke="black" stroke-width="2" fill="none" id="personPath5"/>
+    <path d="M 350 670 Q 400 800, 350 1120" stroke="black" stroke-width="2" fill="none" id="personPath6"/>
+    <path d="M 350 670 Q 620 800, 550 1120" stroke="black" stroke-width="2" fill="none" id="personPath8"/>
+
+
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion dur="2.5s" repeatCount="1">
+        <mpath href="#personPath1" />
+      </animateMotion>
+
+      <animateMotion dur="2.5s" begin="8s" repeatCount="1">
+        <mpath href="#personPath1" />
+      </animateMotion>
+
+      <animateMotion dur="2.5s" begin="14s" repeatCount="1">
+        <mpath href="#personPath1" />
+      </animateMotion>
+      
+      <animateMotion dur="2.5s" begin="22.1s" repeatCount="1">
+        <mpath href="#personPath1" />
+      </animateMotion>
+      <animate attributeName="visibility" from="visible" to="hidden" begin="30s" dur="0.1s" repeatCount="indefinite" />
+    </g>
+    
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin=".7s" dur="2.5s" repeatCount="1">
+        <mpath href="#personPath2" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="8.7s" repeatCount="1">
+        <mpath href="#personPath2" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="14.7s" repeatCount="1">
+        <mpath href="#personPath2" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="22.8s" repeatCount="1">
+        <mpath href="#personPath2" />
+      </animateMotion>
+    </g>
+
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin=".5s" dur="2.5s" repeatCount="1">
+        <mpath href="#personPath3" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="8.5s" repeatCount="1">
+        <mpath href="#personPath3" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="14.5s" repeatCount="1">
+        <mpath href="#personPath3" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="22.6s" repeatCount="1">
+        <mpath href="#personPath3" />
+      </animateMotion>
+    </g>
+
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin=".8s" dur="2.5s" repeatCount="1">
+        <mpath href="#personPath4" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="8.8s" repeatCount="1">
+        <mpath href="#personPath4" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="14.8s" repeatCount="1">
+        <mpath href="#personPath4" />
+      </animateMotion>
+      <animateMotion dur="2.5s" begin="22.9s" repeatCount="1">
+        <mpath href="#personPath4" />
+      </animateMotion>
+    </g>
+
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin="2.3s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="10.3s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="16.3s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+      <animateMotion begin="24.1s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+    </g>
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin="2s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+      <animateMotion begin="10s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="16s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="23.8s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+    </g>
+    <g transform="translate(-24, -24)">
+      <circle cx="24" cy="24" r="24" fill="#e6ebef" />
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#e6ebef" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 10V9.91667C15 8.85812 14.1419 8 13.0833 8H11C9.89543 8 9 8.89543 9 10C9 11.1046 9.89543 12 11 12H13C14.1046 12 15 12.8954 15 14C15 15.1046 14.1046 16 13 16H10.9583C9.87678 16 9 15.1232 9 14.0417V14M12 17.5V6.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+  
+      <!-- Animate the motion -->
+      <animateMotion begin="2.6s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+      <animateMotion begin="10.6s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="16.6s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath1" />
+      </animateMotion>
+      <animateMotion begin="24.4s" dur="2s" repeatCount="1">
+        <mpath href="#shopPath3" />
+      </animateMotion>
+    </g>
+
+    <g transform="translate(-24, -24)">
+      <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none">
+        <circle cx="32.06" cy="31.46" r="24.25" stroke-linecap="round" fill="#e6ebef"/>
+        <line x1="32.13" y1="17" x2="32.13" y2="16.33" stroke-linecap="round"/>
+        <polyline points="32.13 44.76 32.13 24.33 27.86 24.33" stroke-linecap="round"/>
+        <line x1="24.02" y1="45.22" x2="40.23" y2="45.22" stroke-linecap="round"/>
+      </svg>
+      <!-- Animate the motion -->
+      <animateMotion begin="5.4s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath5" />
+      </animateMotion>
+      <animateMotion begin="19.5s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath5" />
+      </animateMotion>
+    </g>
+    <g transform="translate(-24, -24)">
+      <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none">
+        <circle cx="32.06" cy="31.46" r="24.25" stroke-linecap="round" fill="#e6ebef"/>
+        <line x1="32.13" y1="17" x2="32.13" y2="16.33" stroke-linecap="round"/>
+        <polyline points="32.13 44.76 32.13 24.33 27.86 24.33" stroke-linecap="round"/>
+        <line x1="24.02" y1="45.22" x2="40.23" y2="45.22" stroke-linecap="round"/>
+      </svg>
+      <!-- Animate the motion -->
+      <animateMotion begin="5.4s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath6" />
+      </animateMotion>
+      <animateMotion begin="19.5s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath6" />
+      </animateMotion>
+    </g>
+    <g transform="translate(-24, -24)">
+      <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none">
+        <circle cx="32.06" cy="31.46" r="24.25" stroke-linecap="round" fill="#e6ebef"/>
+        <line x1="32.13" y1="17" x2="32.13" y2="16.33" stroke-linecap="round"/>
+        <polyline points="32.13 44.76 32.13 24.33 27.86 24.33" stroke-linecap="round"/>
+        <line x1="24.02" y1="45.22" x2="40.23" y2="45.22" stroke-linecap="round"/>
+      </svg>
+      <!-- Animate the motion -->
+      <animateMotion begin="5.4s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath8" />
+      </animateMotion>
+      <animateMotion begin="19.5s" dur="2.2s" repeatCount="1" >
+        <mpath href="#personPath8" />
+      </animateMotion>
+    </g>
+
+    <svg x="100" y="1130" width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="#000000" fill="none">
+      <circle cx="32" cy="18.14" r="11.14"/>
+      <path d="M54.55,56.85A22.55,22.55,0,0,0,32,34.3h0A22.55,22.55,0,0,0,9.45,56.85Z"/>
+    </svg>
+    <svg x="300" y="1130" width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="#000000" fill="none">
+      <circle cx="32" cy="18.14" r="11.14"/>
+      <path d="M54.55,56.85A22.55,22.55,0,0,0,32,34.3h0A22.55,22.55,0,0,0,9.45,56.85Z"/>
+    </svg>
+    <svg x="500" y="1130" width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="#000000" fill="none">
+      <circle cx="32" cy="18.14" r="11.14"/>
+      <path d="M54.55,56.85A22.55,22.55,0,0,0,32,34.3h0A22.55,22.55,0,0,0,9.45,56.85Z"/>
+    </svg>
+</svg>
